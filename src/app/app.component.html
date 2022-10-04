@@ -1,0 +1,14 @@
+<h1>Test (keyup.enter) iOS 13</h1>
+<h3>
+  (keyup) : <b>{{ keyupCounter }}</b>
+</h3>
+<h3>
+  (keyup.enter) : <b>{{ keyupEnterCounter }}</b>
+</h3>
+<input
+  (keyup.enter)="keyupEnter($event)"
+  (keyup.shift.enter)="keyupShiftEnter($event)"
+  placeholder="Press Keyboard Enter"
+  autofocus
+  style="min-width:50%;min-height:20px;"
+/>
